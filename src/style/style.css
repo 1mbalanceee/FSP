@@ -30,7 +30,7 @@ body {
     animation: fadeIn 1 1s ease-out;
 }
 
-button{
+.continuebot{
   position: absolute;
   border: 2px solid white;
   background: transparent;
@@ -49,24 +49,27 @@ button{
   transition: .3s;
 }
 
-button:hover{
-  border: 2px solid #104F55;
+.continuebot:hover{
+  border: 2px solid #002a85;
   background-color: rgba(365,365,365,0.5);
   cursor: pointer;
-  color: #104F55;
+  color: #002a85;
   opacity: .8;
   transition: .3s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
 }
 
-button:focus{
+.continuebot:focus{
     outline: none;
 }
 
 img{
     margin: 20px;
     cursor: pointer;
+    transition: .3s;
 }
+
 
 @-webkit-keyframes floatUp{
   0%{top: 100vh; opacity: 0;}
@@ -95,6 +98,36 @@ img{
   50%{top: 0vh; opacity: .8;}
   75%{opacity: 1;}
   100%{top: -100vh; opacity: 0;}
+}
+
+.parsebody{
+  display: none;
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  top: 60vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border: 5px solid #002a85;
+  background-color: rgba(365,365,365,0.5);
+  opacity: 1;
+  /* box-shadow: 20px 20px 100px 10000px rgba(0,0,0,0.2); */
+  font-family: "Hero-Light", sans-serif;
+  color: white;
+  border-radius: 10px;
+  /* /* top: 10vh;
+  left: 15vw; */
+  /* width:70vw;
+  height: 500px; */
+  /* min-width: 700px; */
+  transition: 0.3s;
+  /* background-color: #008cff; */
+}
+
+.parsesurvey{
+  /* margin: o; */
 }
 
 .header{
@@ -148,6 +181,10 @@ img{
     animation-fill-mode: forwards;
     animation-delay: 1s;
   }
+
+img:hover{
+  transform: scale(1.2);
+}
 
 /* #head2{
   -webkit-animation: fadeOut 1 5s ease-in;
