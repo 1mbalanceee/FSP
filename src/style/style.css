@@ -117,6 +117,7 @@ img{
   font-family: "Hero-Light", sans-serif;
   color: white;
   border-radius: 10px;
+  min-width: 400px;
   /* /* top: 10vh;
   left: 15vw; */
   /* width:70vw;
@@ -127,7 +128,53 @@ img{
 }
 
 .parsesurvey{
-  /* margin: o; */
+  opacity: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px;
+  line-height: 50px;
+  transition: 0.3s;
+
+}
+.parsehello{
+  animation: finalFade 1 5s ease-in;
+}
+
+.inputtext,.inputdate{
+  background: transparent;
+  font-family: "Hero-Light";
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  /* background-color: white; */
+  border: 5px solid #002a85;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  width: 300px;
+  height: 30px;
+}
+
+.inputdate{
+  width: 145px;
+}
+
+.inputtext:focus, .inputdate:focus{
+  background: white;
+  color: black;
+  font-weight: 900;
+}
+
+.checkboxes{
+  /* box-sizing: border-box; */
+  line-height: 30px;
+  /* background-color: black;
+  text-align:left;
+  padding-left: 20vw; */
+}
+
+.inputcheckbox{
+  line-height: 0px;
 }
 
 .header{
@@ -185,6 +232,7 @@ img{
 img:hover{
   transform: scale(1.2);
 }
+
 
 /* #head2{
   -webkit-animation: fadeOut 1 5s ease-in;
