@@ -28,6 +28,26 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	implementation 'javax.persistence:javax.persistence-api:2.2' // Or the latest version
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// Добавляем зависимость на Apache POI
+	implementation group: 'org.apache.poi', name: 'poi', version: '5.2.7'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.7'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '4.1.2'
+
+	// Добавляем зависимость на Apache POI для формата .doc
+	implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '4.1.2'
+
+	// Добавляем зависимость на Apache POI для формата .xlsx
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml-schemas', version: '4.1.2'
+	implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '4.1.2'
+	implementation 'org.apache.poi:poi:5.1.0' // Замените на актуальную версию
+
 }
 
 tasks.named('test') {
